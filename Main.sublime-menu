@@ -1,36 +1,26 @@
 [
     {
-        "caption": "Preferences",
+        "id": "preferences",
         "children": [
             {
-                "caption": "Package Settings",
+                "id": "package-settings",
                 "children": [
                     {
                         "caption": "SublimeCodeIntel",
+                        "id": "sublimecodeintel",
                         "children": [
                             {
+                                "caption": "Settings",
+                                "command": "edit_settings",
                                 "args": {
-                                    "file": "${packages}/SublimeCodeIntel/SublimeCodeIntel.sublime-settings"
-                                },
-                                "caption": "Settings \u2013 Default",
-                                "command": "open_file"
-                            },
-                            {
-                                "args": {
-                                    "file": "${packages}/User/SublimeCodeIntel.sublime-settings"
-                                },
-                                "caption": "Settings \u2013 User",
-                                "command": "open_file"
+                                    "base_file": "${packages}/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+                                    "default": "{\n\t$0\n}\n",
+                                }
                             }
                         ],
-                        "id": "sublimecodeintel"
                     }
                 ],
-                "id": "package-settings",
-                "mnemonic": "P"
             }
         ],
-        "id": "preferences",
-        "mnemonic": "n"
     }
 ]
